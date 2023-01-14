@@ -21,7 +21,7 @@ pipeline {
         stage('Run Dockercompose playbook') {
             steps {
                 sh """
-                cd DevOps-Pipeline-PHP/laravel-app
+                cd PHP-pipeline-app/laravel-app
                 ansible-playbook playbook-dcompose.yml 
                 """
             }
