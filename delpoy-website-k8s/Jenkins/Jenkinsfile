@@ -13,7 +13,7 @@ pipeline {
         stage('Build & push Dockerfile') {
             steps {
               sh """
-              cd Kubernetes/comingsoon/
+              cd delpoy-website-k8s/comingsoon/
               ansible-playbook playbook.yml
               """
             }
@@ -71,7 +71,7 @@ pipeline {
                   secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
                   ]]) {
                   sh """
-                  cd Kubernetes/comingsoon/k8s
+                  cd delpoy-website-k8s/comingsoon/k8s
                   kubectl -n comingsoon apply -f deployment.yaml
                   kubectl -n comingsoon apply -f services.yaml
                   """

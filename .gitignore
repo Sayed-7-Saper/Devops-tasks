@@ -9,3 +9,13 @@ PHP-pipeline-app/terraform/test2-helm.pem
 PHP-pipeline-app/terraform/terraform.tfstate.backup
 
 PHP-pipeline-app/terraform/.terraform.lock.hcl
+
+delpoy-website-k8s/terraform/.terraform/
+
+delpoy-website-k8s/terraform/*.tfvars
+
+delpoy-website-k8s/terraform/test2-helm.pem
+
+delpoy-website-k8s/terraform/terraform.tfstate.backup
+
+delpoy-website-k8s/terraform/.terraform.lock.hcl
