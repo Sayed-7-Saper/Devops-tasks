@@ -4,6 +4,8 @@ PHP-pipeline-app/terraform/.terraform/
 
 PHP-pipeline-app/terraform/*.tfvars
 
+PHP-pipeline-app/terraform/test2-helm.pem
+
 PHP-pipeline-app/terraform/terraform.tfstate.backup
 
 PHP-pipeline-app/terraform/.terraform.lock.hcl
