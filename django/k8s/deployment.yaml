@@ -1,0 +1,23 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: survey-app-Deployment
+  namespace: python-app
+  labels:
+    app: survey-app
+spec:
+  selector:
+    matchLabels:
+      app: survey-app
+  replicas: 2    
+  template:
+    metadata:
+      labels:
+        app: survey-app
+    spec:
+      containers:
+      - name: survey-app
+        image: 10103040/survey-app-img:latest
+        ports:
+        - containerPort: 8000
+
