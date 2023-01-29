@@ -12,6 +12,7 @@ sudo apt-get update -y
 sudo apt-get install jenkins -y
 sudo apt install git
 sudo systemctl start jenkins
+
 #Install docker
 echo "--------------------Installing Docker--------------------"
 sudo apt-get update -y \
